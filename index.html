@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arokiya Uma - Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Arokiya Uma</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- About Me -->
+  <section id="about">
+    <img src="your-image.jpg" alt="Arokiya Uma Photo" />
+    <p>Hello! I'm Arokiya Uma, a passionate II B.Sc Computer Science student specializing in Data Analytics. I enjoy creating data-driven solutions and learning new technologies to help solve real-world problems.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="progress-bar"><div class="progress" data-progress="90%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Data Analysis</div>
+      <div class="progress-bar"><div class="progress" data-progress="85%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">HTML & CSS</div>
+      <div class="progress-bar"><div class="progress" data-progress="80%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress-bar"><div class="progress" data-progress="75%"></div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-title="Data Visualization Dashboard" data-description="A web dashboard displaying interactive charts using D3.js and Chart.js." data-image="project1.jpg">
+        <img src="project1-thumb.jpg" alt="Data Visualization Dashboard" />
+        <div class="card-content">
+          <h3>Data Visualization Dashboard</h3>
+          <p>Interactive charts using D3.js and Chart.js</p>
+        </div>
+      </div>
+      <div class="project-card" data-title="Student Management System" data-description="A full-stack app to manage student records and attendance." data-image="project2.jpg">
+        <img src="project2-thumb.jpg" alt="Student Management System" />
+        <div class="card-content">
+          <h3>Student Management System</h3>
+          <p>Manage student records and attendance</p>
+        </div>
+      </div>
+      <div class="project-card" data-title="Sentiment Analysis Tool" data-description="Analyzes social media sentiment using Python NLP libraries." data-image="project3.jpg">
+        <img src="project3-thumb.jpg" alt="Sentiment Analysis Tool" />
+        <div class="card-content">
+          <h3>Sentiment Analysis Tool</h3>
+          <p>Social media sentiment analysis with NLP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <div class="error" id="error-name"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <div class="error" id="error-email"></div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <div class="error" id="error-message"></div>
+
+      <button type="submit">Send</button>
+      <p id="success-msg" style="color:green; margin-top:15px; display:none;">Message sent successfully!</p>
+    </form>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal" aria-label="Close">&times;</span>
+    <img src="" alt="" id="modalImage" />
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
